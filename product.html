@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品列表</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="crm.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="n_crm.js"></script>
+</head>
+<body>
+  <div class="header" style="justify-content:end";>
+
+      <div class="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+     <div class="sidenavpage">
+      <div class="sidenav">
+         <ul>
+           <li><a href="trading_record.html">消費紀錄</a></li>
+           <li><a href="product.html">產品列表</a></li>
+           <li><a href="contact.html">顧客資料總覽</a></li>
+           <li><a href="#">帳號管理</a></li>
+           <li><a href="#">登出</a></li>
+         </ul>
+      </div>
+     </div>
+   </div>
+
+    <div class="list_main allbackground">
+        <div class="small-searchbar">
+            <form action="">
+              <input type="search" placeholder="SEARCH" />
+              <button type="submit"><img src="search.svg" alt="" /></button>
+            </form>
+            <br />
+    
+            <div class="list td_padding">
+                <table>
+                    <tr>
+                        <th class="productnumber">產品編號</th>
+                        <th class="productname">產品名稱</th>
+                        <th class="category">類別</th>
+                        <th class="productcost">成本</th>
+                        <th class="productprice">售價</th>
+                        <th class="productmemo">備註</th>
+                      </tr>
+                    <tr>
+                      <td class="productnumber">Gold1234</td>
+                      <td class="productname">超漂亮洗髮精</td>
+                      <td class="category">shampoo</td>
+                      <td class="productcost">1000</td>
+                      <td class="productprice">1900</td>
+                      <td class="productmemo">備註</td>
+                    </tr>
+                    <tr>
+                        <td class="productnumber">Gold1234</td>
+                        <td class="productname">超漂亮洗髮精</td>
+                        <td class="category">shampoo</td>
+                        <td class="productcost">1000</td>
+                        <td class="productprice">1900</td>
+                        <td class="productmemo">備註</td>
+                      </tr>
+                    <tr>
+                        <td class="productnumber">Gold1234</td>
+                        <td class="productname">超漂亮洗髮精</td>
+                        <td class="category">shampoo</td>
+                        <td class="productcost">1000</td>
+                        <td class="productprice">1900</td>
+                        <td class="productmemo">備註</td>
+                    </tr>
+                   
+                 
+                  </table>
+    </div>
+    <div class="prdjp_bg">
+    <div class="prdjp-wrap">
+        <button id="prdjp-closebtn" type="button">
+          x
+        </button>
+      <h2>新增產品</h2>
+      <form action="">
+      <div class="prdbrand">
+        <label for="brand">品牌</label>  
+        <input list="prdbrand" name="brand" id="brand">
+        <datalist id="prdbrand">
+          <option value="Goldwell">Goldwell</option>
+          <option value="Wella">Wella</option>
+          <option value="Keune">Keune</option>
+          <option value="MJL">MJL</option>
+          <option value="Ford">Ford</option>
+        </datalist>
+        <!-- <button id="crtbrand" type="button">
+          <p>+</p>
+        </button> -->
+      </div>
+      <div class="categories">
+          <label for="categories">類別</label>   
+          <input list="prdcg" name="categories" id="categories">
+          <datalist id="prdcg">
+            <option value="Shampoo">Shampoo</option>
+            <option value="Lotion">Lotion</option>
+            <option value="Mask">Mask</option>
+            <option value="Gel">Gel</option>
+            <option value="Oil">Oil</option>
+          </datalist>
+          <!-- <button id="crtcg" type="button">
+              <p>+</p>
+            </button> -->
+      </div>
+      <label for="prdname">商品名稱</label> 
+      <input type="text" name="prdname" id="prdname" required>
+      <label for="prdprice">售價</label> 
+      <input type="text" name="prdprice" id="prdprice" required>
+      <br>
+      <label for="prdcpt">容量</label> 
+      <input type="text" name="prdcpt" id="prdcpt">
+      <label for="prdcost">成本</label> 
+      <input type="text" name="prdcost" id="prdcost">
+      <br>
+      <label for="prdnote">備註</label> 
+      <input type="text"name="prdnote" id="prdnote">
+      <br>
+      <button id="prtconfirm" >確認新增</button>
+      </form>
+  </div>
+  </div>
+    <div class="createbutton create_product">
+     
+        <p class="create">+</p>
+     
+    </div>
+  </div>
+</body>
+</html>
