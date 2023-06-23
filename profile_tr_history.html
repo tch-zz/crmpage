@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人歷史消費紀錄</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="crm.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="n_crm.js"></script>
+</head>
+<body class="allbackground">
+    <div class="header" style="justify-content:end";>
+
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+  
+       <div class="sidenavpage">
+        <div class="sidenav">
+           <ul>
+             <li><a href="trading_record.html">消費紀錄</a></li>
+             <li><a href="product.html">產品列表</a></li>
+             <li><a href="contact.html">顧客資料總覽</a></li>
+             <li><a href="#">帳號管理</a></li>
+             <li><a href="#">登出</a></li>
+           </ul>
+        </div>
+       </div>
+     </div>
+   
+    <div class="file_main">
+      <div class="file_card">
+        <div class="label">
+            <p title>林小明</p>
+        </div>
+        <div class="content">
+          <div class="info">
+            <form action="">
+                <div class="photo">
+                  <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                  <input type="file" id="uploadphotos" style="visibility:hidden;" readonly>
+                </div>
+              
+                <div class="profile">
+             
+                  <p id="memberno"> Vip001</p>
+                  <input type="text" name="name" id="name" required placeholder="姓名" readonly>
+                  <br>
+            
+                  <input type="txet" name="birthday" id="birthday" placeholder="生日 01/01" maxlength="5" readonly>
+                  <br>
+                  <input type="text" name="cellphone" id="cellphone" maxlength="10" placeholder="手機" readonly>
+                  <br>
+
+                  <input list="recommand0" type="text" name="recommand" id="recommand" placeholder="介紹人" readonly>
+                  <datalist id="recommand0">
+                  <option value="徐大捲">徐大捲</option>
+                  <option value="劉胖子">劉胖子</option>
+                  </datalist>  
+                  <br>
+                  <input type="text" name="note" id="note" placeholder="備註" readonly >
+                  <br>
+                </div>
+            
+             </form>
+            
+          </div>
+          <div class="description hide">
+
+            <div class="personal_tr">
+                <table>
+                    <tr>
+                      <th class="tr_date">消費日期</th>
+                      <th class="service">服務項目</th>
+                      <th class="personaltr_serviceprice">服務金額</th>
+                      <th class="prd">店販商品</th>
+                      <th class="personaltr_prdtotal">店販金額</th>
+                      <th class="note">備註</th>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2023/03/03</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">剪、染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">3000</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">霓光鎖色洗</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">1900</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2023/01/13</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">洗、剪</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">800</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2023/01/03</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">燙</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">3000</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+   
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2022/12/02</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">剪、染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">3000</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2022/10/20</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">洗</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">300</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2022/10/11</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">1400</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">-</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile_tradingrecord.html">2022/09/18</a></td>
+                      <td class="service"><a href="profile_tradingrecord.html">洗</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile_tradingrecord.html">300</a></td>
+                      <td class="prd"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile_tradingrecord.html">－</a></td>
+                      <td class="note"><a href="profile_tradingrecord.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/09/15</a></td>
+                      <td class="service"><a href="profile-visual.html">洗、剪</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">800</a></td>
+                      <td class="prd"><a href="profile-visual.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">-</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/07/24</a></td>
+                      <td class="service"><a href="profile-visual.html">染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">1400</a></td>
+                      <td class="prd"><a href="profile-visual.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">-</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/06/03</a></td>
+                      <td class="service"><a href="profile-visual.html">洗、剪</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">800</a></td>
+                      <td class="prd"><a href="profile-visual.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">-</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/05/12</a></td>
+                      <td class="service"><a href="profile-visual.html">染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">2400</a></td>
+                      <td class="prd"><a href="profile-visual.html">霓光鎖色洗、超導護</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">3720</a></td>
+                      <td class="note"><a href="profile-visual.html">母親節85折</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/05/05</a></td>
+                      <td class="service"><a href="profile-visual.html">燙</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">3000</a></td>
+                      <td class="prd"><a href="profile-visual.html">舞動蠟</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">750</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/03/28</a></td>
+                      <td class="service"><a href="profile-visual.html">-</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">-</a></td>
+                      <td class="prd"><a href="profile-visual.html">深層洗髮精</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">1900</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/03/03</a></td>
+                      <td class="service"><a href="profile-visual.html">洗、剪</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">800</a></td>
+                      <td class="prd"><a href="profile-visual.html">護髮油</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">980</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tr_date"><a href="profile-visual.html">2022/02/02</a></td>
+                      <td class="service"><a href="profile-visual.html">剪、染</a></td>
+                      <td class="personaltr_serviceprice"><a href="profile-visual.html">3000</a></td>
+                      <td class="prd"><a href="profile-visual.html">-</a></td>
+                      <td class="personaltr_prdtotal"><a href="profile-visual.html">-</a></td>
+                      <td class="note"><a href="profile-visual.html">-</a></td>
+                    </tr>
+                  </table>
+               
+              </div>
+         </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
